@@ -1,0 +1,530 @@
+======== TEST START ===============
+./tar-1.30
+tar (GNU tar) 1.30
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 1.cfg
+        ├── 2.cfg
+        └── 3.cfg
+
+2 directories, 4 files
+Compressing....
+tar: /tmp/src/etc: Directory is new
+tar: /tmp/src/etc/config: Directory is new
+tar: Removing leading `/' from member names
+/tmp/src/etc/
+/tmp/src/etc/config/
+/tmp/src/etc/A.cfg
+De-compressing....
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 3.cfg
+        ├── 4.cfg
+        └── 5.cfg
+
+2 directories, 4 files
+tmp/src/etc/
+tmp/src/etc/config/
+./tar-1.30/src/tar: Deleting ‘tmp/src/etc/config/4.cfg’
+./tar-1.30/src/tar: Deleting ‘tmp/src/etc/config/5.cfg’
+tmp/src/etc/A.cfg
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        └── 3.cfg
+
+2 directories, 2 files
+-----------------
+   TAR LIST 
+drwxr-xr-x jhartman/staff   16 2018-08-21 21:02 tmp/src/etc/
+Y A.cfg
+D config
+
+drwxr-xr-x jhartman/staff   22 2018-08-21 21:02 tmp/src/etc/config/
+N 1.cfg
+N 2.cfg
+N 3.cfg
+
+-rw-r--r-- jhartman/staff   30 2018-08-21 21:02 tmp/src/etc/A.cfg
+-----------------
+3.cfg
+./tar-1.30 - ERROR
+========= TEST END ================
+
+======== TEST START ===============
+./tar-1.27.1
+tar (GNU tar) 1.27.1
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 1.cfg
+        ├── 2.cfg
+        └── 3.cfg
+
+2 directories, 4 files
+Compressing....
+./tar-1.27.1/src/tar: /tmp/src/etc: Directory is new
+./tar-1.27.1/src/tar: /tmp/src/etc/config: Directory is new
+./tar-1.27.1/src/tar: Removing leading `/' from member names
+/tmp/src/etc/
+/tmp/src/etc/config/
+/tmp/src/etc/A.cfg
+De-compressing....
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 3.cfg
+        ├── 4.cfg
+        └── 5.cfg
+
+2 directories, 4 files
+tmp/src/etc/
+tmp/src/etc/config/
+./tar-1.27.1/src/tar: Deleting ‘tmp/src/etc/config/4.cfg’
+./tar-1.27.1/src/tar: Deleting ‘tmp/src/etc/config/5.cfg’
+tmp/src/etc/A.cfg
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        └── 3.cfg
+
+2 directories, 2 files
+-----------------
+   TAR LIST 
+drwxr-xr-x jhartman/staff   16 2018-08-21 21:02 tmp/src/etc/
+Y A.cfg
+D config
+
+drwxr-xr-x jhartman/staff   22 2018-08-21 21:02 tmp/src/etc/config/
+N 1.cfg
+N 2.cfg
+N 3.cfg
+
+-rw-r--r-- jhartman/staff   30 2018-08-21 21:02 tmp/src/etc/A.cfg
+-----------------
+3.cfg
+./tar-1.27.1 - ERROR
+========= TEST END ================
+
+======== TEST START ===============
+./tar-1.25
+tar (GNU tar) 1.25
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 1.cfg
+        ├── 2.cfg
+        └── 3.cfg
+
+2 directories, 4 files
+Compressing....
+./tar-1.25/src/tar: /tmp/src/etc: Directory is new
+./tar-1.25/src/tar: /tmp/src/etc/config: Directory is new
+./tar-1.25/src/tar: Removing leading `/' from member names
+/tmp/src/etc/
+/tmp/src/etc/config/
+/tmp/src/etc/A.cfg
+De-compressing....
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 3.cfg
+        ├── 4.cfg
+        └── 5.cfg
+
+2 directories, 4 files
+tmp/src/etc/
+tmp/src/etc/config/
+tmp/src/etc/A.cfg
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 3.cfg
+        ├── 4.cfg
+        └── 5.cfg
+
+2 directories, 4 files
+-----------------
+   TAR LIST 
+drwxr-xr-x jhartman/staff   16 2018-08-21 21:02 tmp/src/etc/
+Y A.cfg
+D config
+
+drwxr-xr-x jhartman/staff   22 2018-08-21 21:02 tmp/src/etc/config/
+N 1.cfg
+N 2.cfg
+N 3.cfg
+
+-rw-r--r-- jhartman/staff   30 2018-08-21 21:02 tmp/src/etc/A.cfg
+-----------------
+3.cfg
+4.cfg
+5.cfg
+./tar-1.25 - OK
+========= TEST END ================
+
+======== TEST START ===============
+./tar-1.23
+tar (GNU tar) 1.23
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 1.cfg
+        ├── 2.cfg
+        └── 3.cfg
+
+2 directories, 4 files
+Compressing....
+./tar-1.23/src/tar: /tmp/src/etc: Directory is new
+./tar-1.23/src/tar: /tmp/src/etc/config: Directory is new
+./tar-1.23/src/tar: Removing leading `/' from member names
+./make.sh: line 58: 33777 Abort trap: 6           $TAR_BASE/src/tar -g /tmp/snapshot -cvz -f /tmp/test.tar.gz -X ${BASE}/exclude.cfg -T ${BASE}/include.cfg
+De-compressing....
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 3.cfg
+        ├── 4.cfg
+        └── 5.cfg
+
+2 directories, 4 files
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 3.cfg
+        ├── 4.cfg
+        └── 5.cfg
+
+2 directories, 4 files
+-----------------
+   TAR LIST 
+-----------------
+3.cfg
+4.cfg
+5.cfg
+./tar-1.23 - OK
+========= TEST END ================
+
+======== TEST START ===============
+./tar-1.24
+tar (GNU tar) 1.24
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 1.cfg
+        ├── 2.cfg
+        └── 3.cfg
+
+2 directories, 4 files
+Compressing....
+./tar-1.24/src/tar: /tmp/src/etc: Directory is new
+./tar-1.24/src/tar: /tmp/src/etc/config: Directory is new
+./tar-1.24/src/tar: Removing leading `/' from member names
+./make.sh: line 58: 33807 Abort trap: 6           $TAR_BASE/src/tar -g /tmp/snapshot -cvz -f /tmp/test.tar.gz -X ${BASE}/exclude.cfg -T ${BASE}/include.cfg
+De-compressing....
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 3.cfg
+        ├── 4.cfg
+        └── 5.cfg
+
+2 directories, 4 files
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 3.cfg
+        ├── 4.cfg
+        └── 5.cfg
+
+2 directories, 4 files
+-----------------
+   TAR LIST 
+-----------------
+3.cfg
+4.cfg
+5.cfg
+./tar-1.24 - OK
+========= TEST END ================
+
+======== TEST START ===============
+./.git
+./make.sh: line 61: ./.git/src/tar: No such file or directory
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 1.cfg
+        ├── 2.cfg
+        └── 3.cfg
+
+2 directories, 4 files
+Compressing....
+./make.sh: line 77: ./.git/src/tar: No such file or directory
+De-compressing....
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 3.cfg
+        ├── 4.cfg
+        └── 5.cfg
+
+2 directories, 4 files
+./make.sh: line 88: ./.git/src/tar: No such file or directory
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 3.cfg
+        ├── 4.cfg
+        └── 5.cfg
+
+2 directories, 4 files
+-----------------
+   TAR LIST 
+./make.sh: line 94: ./.git/src/tar: No such file or directory
+-----------------
+3.cfg
+4.cfg
+5.cfg
+./.git - OK
+========= TEST END ================
+
+======== TEST START ===============
+./tar-1.28
+./make.sh: line 61: ./tar-1.28/src/tar: No such file or directory
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 1.cfg
+        ├── 2.cfg
+        └── 3.cfg
+
+2 directories, 4 files
+Compressing....
+./make.sh: line 77: ./tar-1.28/src/tar: No such file or directory
+De-compressing....
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 3.cfg
+        ├── 4.cfg
+        └── 5.cfg
+
+2 directories, 4 files
+./make.sh: line 88: ./tar-1.28/src/tar: No such file or directory
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 3.cfg
+        ├── 4.cfg
+        └── 5.cfg
+
+2 directories, 4 files
+-----------------
+   TAR LIST 
+./make.sh: line 94: ./tar-1.28/src/tar: No such file or directory
+-----------------
+3.cfg
+4.cfg
+5.cfg
+./tar-1.28 - OK
+========= TEST END ================
+
+======== TEST START ===============
+./tar-1.26
+tar (GNU tar) 1.26
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 1.cfg
+        ├── 2.cfg
+        └── 3.cfg
+
+2 directories, 4 files
+Compressing....
+./tar-1.26/src/tar: /tmp/src/etc: Directory is new
+./tar-1.26/src/tar: /tmp/src/etc/config: Directory is new
+./tar-1.26/src/tar: Removing leading `/' from member names
+/tmp/src/etc/
+/tmp/src/etc/config/
+/tmp/src/etc/A.cfg
+De-compressing....
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 3.cfg
+        ├── 4.cfg
+        └── 5.cfg
+
+2 directories, 4 files
+tmp/src/etc/
+tmp/src/etc/config/
+tmp/src/etc/A.cfg
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 3.cfg
+        ├── 4.cfg
+        └── 5.cfg
+
+2 directories, 4 files
+-----------------
+   TAR LIST 
+drwxr-xr-x jhartman/staff   16 2018-08-21 21:02 tmp/src/etc/
+Y A.cfg
+D config
+
+drwxr-xr-x jhartman/staff   22 2018-08-21 21:02 tmp/src/etc/config/
+N 1.cfg
+N 2.cfg
+N 3.cfg
+
+-rw-r--r-- jhartman/staff   30 2018-08-21 21:02 tmp/src/etc/A.cfg
+-----------------
+3.cfg
+4.cfg
+5.cfg
+./tar-1.26 - OK
+========= TEST END ================
+
+======== TEST START ===============
+./tar-1.27
+tar (GNU tar) 1.27
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 1.cfg
+        ├── 2.cfg
+        └── 3.cfg
+
+2 directories, 4 files
+Compressing....
+./tar-1.27/src/tar: /tmp/src/etc: Directory is new
+./tar-1.27/src/tar: /tmp/src/etc/config: Directory is new
+./tar-1.27/src/tar: Removing leading `/' from member names
+/tmp/src/etc/
+/tmp/src/etc/config/
+/tmp/src/etc/A.cfg
+De-compressing....
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 3.cfg
+        ├── 4.cfg
+        └── 5.cfg
+
+2 directories, 4 files
+tmp/src/etc/
+tmp/src/etc/config/
+./tar-1.27/src/tar: Deleting ‘tmp/src/etc/config/4.cfg’
+./tar-1.27/src/tar: Deleting ‘tmp/src/etc/config/5.cfg’
+tmp/src/etc/A.cfg
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        └── 3.cfg
+
+2 directories, 2 files
+-----------------
+   TAR LIST 
+drwxr-xr-x jhartman/staff   16 2018-08-21 21:02 tmp/src/etc/
+Y A.cfg
+D config
+
+drwxr-xr-x jhartman/staff   22 2018-08-21 21:02 tmp/src/etc/config/
+N 1.cfg
+N 2.cfg
+N 3.cfg
+
+-rw-r--r-- jhartman/staff   30 2018-08-21 21:02 tmp/src/etc/A.cfg
+-----------------
+3.cfg
+./tar-1.27 - ERROR
+========= TEST END ================
+
+======== TEST START ===============
+./tar-1.29
+tar (GNU tar) 1.29
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 1.cfg
+        ├── 2.cfg
+        └── 3.cfg
+
+2 directories, 4 files
+Compressing....
+./tar-1.29/src/tar: /tmp/src/etc: Directory is new
+./tar-1.29/src/tar: /tmp/src/etc/config: Directory is new
+./tar-1.29/src/tar: Removing leading `/' from member names
+/tmp/src/etc/
+/tmp/src/etc/config/
+/tmp/src/etc/A.cfg
+De-compressing....
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        ├── 3.cfg
+        ├── 4.cfg
+        └── 5.cfg
+
+2 directories, 4 files
+tmp/src/etc/
+tmp/src/etc/config/
+./tar-1.29/src/tar: Deleting ‘tmp/src/etc/config/4.cfg’
+./tar-1.29/src/tar: Deleting ‘tmp/src/etc/config/5.cfg’
+tmp/src/etc/A.cfg
+/tmp/src
+└── etc
+    ├── A.cfg
+    └── config
+        └── 3.cfg
+
+2 directories, 2 files
+-----------------
+   TAR LIST 
+drwxr-xr-x jhartman/staff   16 2018-08-21 21:02 tmp/src/etc/
+Y A.cfg
+D config
+
+drwxr-xr-x jhartman/staff   22 2018-08-21 21:02 tmp/src/etc/config/
+N 1.cfg
+N 2.cfg
+N 3.cfg
+
+-rw-r--r-- jhartman/staff   30 2018-08-21 21:02 tmp/src/etc/A.cfg
+-----------------
+3.cfg
+./tar-1.29 - ERROR
+========= TEST END ================
+
