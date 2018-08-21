@@ -1,0 +1,21 @@
+se-context.o: se-context.c ../config.h selinux/context.h \
+  /usr/include/errno.h /usr/include/sys/errno.h /usr/include/sys/cdefs.h \
+  /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h \
+  /usr/include/sys/_types/_errno_t.h
+
+../config.h:
+
+selinux/context.h:
+
+/usr/include/errno.h:
+
+/usr/include/sys/errno.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/sys/_symbol_aliasing.h:
+
+/usr/include/sys/_posix_availability.h:
+
+/usr/include/sys/_types/_errno_t.h:
